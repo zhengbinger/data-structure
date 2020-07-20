@@ -21,9 +21,22 @@ public class ArrayQueueDemo{
             key = scanner.next().charAt(0);
             switch(key){
                 case 's': queue.showQueue();break;
-                case 'a': 
+                case 'e':
+                    System.out.println("退出");
+                    loop=false;
+                    break;
+                case 'a':
                 int value = scanner.nextInt();
-                queue.addQueue(value);
+                    queue.addQueue(value);
+                    break;
+                case 'g':
+                    System.out.println(queue.getQueue());
+                    break;
+                case 'h':
+                    System.out.println( queue.headQueue());
+                    break;
+                default:
+                    System.out.println("选择无效");
             }
         }
 
@@ -101,7 +114,7 @@ public class ArrayQueueDemo{
             }
 
             for (int i = 0; i < arr.length; i++) {
-                System.out.printf("%d\t\t%d",i,arr[i]);
+                System.out.printf("%d\t\t%d\n",i,arr[i]);
             }
         }
 
