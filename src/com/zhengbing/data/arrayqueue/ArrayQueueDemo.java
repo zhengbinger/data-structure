@@ -97,7 +97,7 @@ public class ArrayQueueDemo{
         public int getQueue(){
             // 判断队列是否为空
             if(isEmpty()){
-                // 跑出异常
+                // 抛出异常
                 throw new RuntimeException("队列空，无法获取数据");
             }
             front++;
@@ -126,7 +126,6 @@ public class ArrayQueueDemo{
                 throw new RuntimeException("队列空，无法获取数据");
             }
             return arr[front+1];
-
         }
     }
 }
