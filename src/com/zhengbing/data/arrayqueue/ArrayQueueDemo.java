@@ -1,4 +1,4 @@
-package com.zhengbing.arrayqueue;
+package com.zhengbing.data.arrayqueue;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class ArrayQueueDemo{
         // 创建一个队列
         ArrayQueue queue = new ArrayQueue(3);
         char key = ' ';
-        Scanner scanner = mew Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         boolean loop = true;
 
         while(loop){
@@ -32,7 +32,7 @@ public class ArrayQueueDemo{
     /**
      * 使用数组模拟队列，编写一个ArrayQueue
      */
-    class ArrayQueue{
+    static class ArrayQueue{
 
         private int maxSize;  // 队列数组最大容量
         private int front;    // 队列头
