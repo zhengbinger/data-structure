@@ -2,6 +2,10 @@ package com.zhengbing.data.arrayqueue;
 
 import java.util.Scanner;
 
+/**
+ * 数组模拟队列demo
+ *
+ */
 public class ArrayQueueDemo{
 
     public static void main(String[] args) {
@@ -39,8 +43,6 @@ public class ArrayQueueDemo{
                     System.out.println("选择无效");
             }
         }
-
-        System.out.println(1);
     }
     /**
      * 使用数组模拟队列，编写一个ArrayQueue
@@ -54,7 +56,7 @@ public class ArrayQueueDemo{
 
         /**
          * 创建队列构造器
-         * @param arrMaxSize
+         * @param arrMaxSize 队列最大长度
          */
         public ArrayQueue(int arrMaxSize){
             this.maxSize = arrMaxSize;
